@@ -441,7 +441,7 @@ class Router():
     
 grib = GRIB()      
 #grib.plot()        
-polaire = POLAR("C:/Users/clopeau/Documents/etienne/python/routage_voile/polaires/polaire_exemple.csv")
+polaire = POLAR("./polaires/polaire_exemple.csv")
 #polaire.plot()
 
 router = Router(polaire, grib, lon0, lat0, latF, lonF, timeStep, limitAzimut=60, angleStep = 5)
